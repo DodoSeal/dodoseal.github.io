@@ -1,0 +1,3 @@
+# We hate all crawlers hah >:D
+User-agent: *
+Disallow: /*
