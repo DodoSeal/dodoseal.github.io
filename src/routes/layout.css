@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-backdrop: var(--color-gray-900);
+}
+
+@layer components {
+    .main-content {
+        @apply w-screen h-screen flex bg-backdrop
+    }
+
+    .center-content {
+        @apply items-center place-content-center
+    }
+}
