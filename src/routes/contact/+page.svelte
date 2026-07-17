@@ -1,18 +1,14 @@
 <script lang="ts">
 	import Footer from "$lib/assets/Footer.svelte";
 	import Navbar from "$lib/assets/Navbar.svelte";
-	import { onMount } from "svelte";
-    let sitePath: string = $state("");
-
-    onMount(() => {
-        sitePath = window.location.pathname;
-    });
+	import PageTitle from "$lib/assets/PageTitle.svelte";
 </script>
 
 <div class="main-wrapper">
     <Navbar />
+    <PageTitle title="Contact Me" description="Description here haha lol idk what to write, just make something up for now yeah... :D"/>
     <div class="main-content center-content">
-        <p class="text-5xl text-text-light font-bold">{sitePath}</p>
+        <!-- Stuff goes here btw -->
     </div>
     <Footer />
 </div>
