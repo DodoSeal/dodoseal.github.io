@@ -11,6 +11,6 @@
 <div class="main-wrapper">
     <Navbar />
     <div class="main-content center-content">
-        <p class="text-5xl font-bold">{sitePath}</p>
+        <p class="text-5xl text-text-light font-bold">{sitePath}</p>
     </div>
 </div>

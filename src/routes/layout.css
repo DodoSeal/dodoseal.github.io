@@ -6,12 +6,10 @@
     -webkit-user-drag: none;
 }
 
-p {
-    color: var(--color-gray-300);
-}
-
 @theme {
     --color-backdrop: var(--color-gray-900);
+    --color-text-light: var(--color-gray-300);
+    --color-text-dark: var(--color-gray-500);
 }
 
 @layer components {
