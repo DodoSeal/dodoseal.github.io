@@ -7,6 +7,19 @@
     scrollbar-gutter: stable;
 }
 
+@font-face {
+    font-family: 'Rubik';
+    src: url('/fonts/Rubik-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik-Italic";
+    src: url('/fonts/Rubik-BoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-display: swap;
+}
+
 @theme {
     --color-backdrop: var(--color-gray-900);
     --color-text-light: var(--color-gray-300);
@@ -14,6 +27,10 @@
 }
 
 @layer components {
+    * {
+        font-family: "Rubik";
+    }
+
     body {
         @apply bg-backdrop;
     }
