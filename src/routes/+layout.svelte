@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './layout.css';
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.png';
 	import { onNavigate } from '$app/navigation';
 
 	let { children } = $props();
@@ -18,7 +18,6 @@
 </script>
 
 <svelte:head>
-	<meta property="og:image" content={favicon}>
 	<link rel="icon" href={favicon} />
 	<title>Max McDaniel</title>
 </svelte:head>
