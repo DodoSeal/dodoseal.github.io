@@ -6,9 +6,10 @@
     const errorMsg = page.error?.message || "An Error Occurred";
 </script>
 
-<div class="main-content center-content flex-col">
+<div class="main-wrapper">
     <Navbar />
-
-    <p class="text-gray-300 text-[10rem] font-bold">{errorCode}</p>
-    <p class="text-gray-300 text-[5rem] font-bold">{errorMsg}</p>
+    <div class="main-content center-content flex-col">
+        <p class="text-gray-300 text-[10rem] font-bold">{errorCode}</p>
+        <p class="text-gray-300 text-[5rem] font-bold">{errorMsg}</p>
+    </div>
 </div>

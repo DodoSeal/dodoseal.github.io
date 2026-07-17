@@ -1,15 +1,37 @@
 @import 'tailwindcss';
 
+* {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+p {
+    color: var(--color-gray-300);
+}
+
 @theme {
     --color-backdrop: var(--color-gray-900);
 }
 
 @layer components {
-    .main-content {
-        @apply w-screen h-screen flex bg-backdrop
+    .center-content {
+        @apply flex items-center place-content-center
     }
 
-    .center-content {
-        @apply items-center place-content-center
+    .main-wrapper {
+        @apply w-screen h-screen bg-backdrop flex flex-col items-center;
+    }
+
+    .main-content {
+        height: calc(100vh - 10rem);
+        @apply w-full bg-backdrop;
+    }
+}
+
+/* This is an interesting fix and it works so we no longer touch it :D */
+@media (width <= 1280px) {
+    .md\:px-80 {
+        padding-inline: 0;
     }
 }
