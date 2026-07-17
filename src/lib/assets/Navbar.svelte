@@ -7,7 +7,7 @@
     });
 </script>
 
-<div class="bg-backdrop fixed top-0 w-200 h-40 py-8 flex flex-col md:flex-row items-center place-content-center md:justify-between">
+<div class="bg-backdrop fixed top-0 w-screen md:w-200 h-40 py-8 flex flex-col md:flex-row items-center place-content-center md:justify-between">
     <!-- Title and Email -->
     <div class="w-75 h-full flex center-content">
         <p class="text-gray-300 font-xl font-bold m-1">Max McDaniel</p>
