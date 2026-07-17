@@ -18,7 +18,7 @@
     </div>
 
     <!-- Navigation Buttons -->
-    <div class="h-full flex center-content gap-6">
+    <div class="h-full flex center-content gap-6 mt-4 md:mt-0">
         <a href="/" class="{currentRoute === "/" ? "text-text-light" : "text-text-dark"} font-xl font-bold  hover:text-text-light transition-colors duration-200 cursor-pointer" id="nav-home">Home</a>
         <a href="/portfolio" class="{currentRoute === "/portfolio" ? "text-text-light" : "text-text-dark"} font-xl font-bold  hover:text-text-light transition-colors duration-200 cursor-pointer" id="nav-portfolio">Portfolio</a>
         <a href="/contact" class="{currentRoute === "/contact" ? "text-text-light" : "text-text-dark"} font-xl font-bold  hover:text-text-light transition-colors duration-200 cursor-pointer" id="nav-contact">Contact</a>
