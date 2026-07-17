@@ -4,6 +4,7 @@
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
+    scrollbar-gutter: stable;
 }
 
 @theme {
@@ -13,17 +14,24 @@
 }
 
 @layer components {
+    body {
+        @apply bg-backdrop;
+    }
+
     .center-content {
         @apply flex items-center place-content-center
     }
 
-    .main-wrapper {
+    /* .main-wrapper {
         @apply w-screen h-screen bg-backdrop flex flex-col items-center;
+    } */
+
+    .main-wrapper {
+        @apply max-w-5xl relative mx-auto px-6 py-16 flex-1 w-full flex flex-col;
     }
 
     .main-content {
-        height: calc(100vh - 10rem);
-        @apply w-full bg-backdrop;
+        @apply w-full h-screen bg-backdrop;
     }
 }
 
